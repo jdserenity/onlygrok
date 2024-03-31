@@ -20,5 +20,13 @@
         "16" : "assets/logoIcon16x16px.png",
         "48" : "assets/logoIcon48x48px.png",
         "128" : "assets/logoIcon128x128px.png"
-    }
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://twitter.com/i/grok"],
+            "js": ["content-scripts/onlyGrok.js"],
+            "all_frames" : true,
+            "run_at": "document_end"
+        }
+    ]
 }
