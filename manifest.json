@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "only-grok",
+    "description": "hide everything other than grok on https://x.com/i/grok",
+    "version": "0",
+    "action": {
+        "default_title" : "only-grok",
+        "default_icon": "assets/logoIcon128x128px.png",
+        "default_popup" : "browserActionPopup.html"
+    },
+    "background" : {
+        "service_worker" : "serviceWorker.js"
+    },
+    "host_permissions" : [
+        "https://twitter.com/i/grok"
+    ],
+    "permissions" : [
+    ],
+    "icons" : {
+        "16" : "assets/logoIcon16x16px.png",
+        "48" : "assets/logoIcon48x48px.png",
+        "128" : "assets/logoIcon128x128px.png"
+    }
+}
